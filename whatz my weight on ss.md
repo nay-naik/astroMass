@@ -19,3 +19,5 @@ pluto = 6 (0.06)
 for example:
 you weigh 50 on earth let's find out how much you way on venus
 weight on venus = 50 x 0.91 = 45.5
+
+![Alt text](<app look.png>)
