@@ -23,6 +23,13 @@ def get_image_path(image_name):
 root = tk.Tk()
 root.title("Astro Mass")
 
+bgImage = Image.open(get_image_path("galaxy.png"))
+bgImage = bgImage.resize((root.winfo_screenwidth(), root.winfo_screenheight()))
+bgPhoto = ImageTk.PhotoImage(bgImage)
+
+bgLabel = tk.Label(root, image=bgPhoto)
+bgLabel.place(x=0, y=0, relwidth=1, relheight=1)
+
 weight_label = tk.Label(
     root, text="Enter your weight on Earth (kg):", font=("Arial", 16))
 weight_label.grid(row=0, column=0, columnspan=4,
